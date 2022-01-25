@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   def index
     users = User.all
 
-    render json: UsersRepresenter.new(users).as_json, status: :ok
+    render json: UsersRepresenter.as_json(users), status: :ok
   end
 
   # GET /users/1

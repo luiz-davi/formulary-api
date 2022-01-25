@@ -43,25 +43,17 @@ RSpec.describe "/users", type: :request do
       expect(JSON.parse(response.body)).to eq([
         {
           "cpf"=>"12345678978",
-          "created_at"=>"2022-01-25T01:31:47.588Z",
           "email"=>"luizd4398@gmail.com",
           "id"=>1,
-          "nome"=>"luiz davi",
-          "password_digest"=>
-           "$2a$04$MIDT0rg25r1NOjWnuCEr/eEtAzvsbyYPlIQwVeW..dLUTRaGJSczy",
-          "updated_at"=>"2022-01-25T01:31:47.588Z"
+          "nome"=>"luiz davi"
         },
-         {
-          "cpf"=>"78945612312",
-          "created_at"=>"2022-01-25T01:31:47.594Z",
-          "email"=>"user@gmail.com",
-          "id"=>2,
-          "nome"=>"user",
-          "password_digest"=>
-           "$2a$04$zINsdm.ef6Ltu6ELg6rI6OOGRr18TxUOq.53SLOfL4lzfEn1hb.Z.",
-          "updated_at"=>"2022-01-25T01:31:47.594Z"
+        {
+          "cpf"=>"78945612312", 
+          "email"=>"user@gmail.com", 
+          "id"=>2, 
+          "nome"=>"user"
         }
-          ])
+      ])
     end
   end
 
